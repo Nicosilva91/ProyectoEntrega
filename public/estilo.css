@@ -1,0 +1,40 @@
+#carouselExampleIndicators {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 100%;
+    height: 100%;
+}
+
+#titulo {
+    margin-top: 100px;
+}
+
+h2 {
+    font-family: fantasy;
+    color: rgb(122, 21, 77);
+    text-align: center;
+}
+
+.body {
+    background-color: blue;
+}
+
+.card {
+    margin-top: 30px;
+    justify-content: center;
+    margin-left: 10vh;
+}
+
+.card-img-top {
+    width: 200px;
+    height: 350px;
+}
+
+.card-img {
+    width: 30vh;
+    height: 70vh;
+}
+
+.formulario {
+    margin-top: 20px;
+}
