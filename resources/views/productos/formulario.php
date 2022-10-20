@@ -13,27 +13,33 @@
     require_once('navbar.php');
     ?>
 
-
-<form class="formulario">
+<section>
+<form class="formulario" action="enviar_mail.php" method="$_POST">
   <div class="row">
     <div class="col">
-      <input type="text" class="form-control" placeholder="Nombre">
+      <input type="text" class="form-control" name="nombre" placeholder="Nombre">
     </div>
     <div class="col">
-      <input type="text" class="form-control" placeholder="Apellido">
+      <input type="text" class="form-control" name="apellido" placeholder="Apellido">
     </div>
   </div>
   <div class="form-group">
     <label for="exampleFormControlInput1">Email address</label>
-    <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+    <input type="email" class="form-control" name="email" id="exampleFormControlInput1" placeholder="name@example.com">
   </div>
   <div class="form-group">
     <label for="exampleFormControlTextarea1">Example textarea</label>
-    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+    <textarea class="form-control" name="texto" id="exampleFormControlTextarea1" rows="3"></textarea>
   </div>
   <button type="submit" class="btn btn-primary">Enviar</button>
 </form>
-    
+<?php
+if (isset($_GET['e'])) {
+    echo "Mensaje enviado exitosamente";
+}
+?>
+
+</section>
 
 <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
